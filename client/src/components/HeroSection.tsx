@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
-import professionalHeadshot from '@/assets/pictures/獨照.jpg';
+import professionalHeadshot from '@/assets/pictures/professional.jpg';
 import { socialLinks } from '@/constants/socialLinks';
 
 const HeroSection = () => {

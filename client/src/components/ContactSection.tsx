@@ -45,7 +45,7 @@ const ContactSection = () => {
             讓我們 <span className="text-accent-gradient">保持聯絡</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            有任務想法或想訊問一下吗？我很樂意訊問你。讓我們一起討論如何實現你的想法。
+            有任何想法或想詢問一下嗎？我很樂意與您溝通。讓我們一起討論如何實現您的想法。
           </p>
         </div>
 
@@ -62,12 +62,12 @@ const ContactSection = () => {
                   </Badge>
                 </div>
                 <p className="text-muted-foreground mb-4">
-                  我目前可以接受新的項目與合作。不論是前端開發、後端機制或系統維運，我都樂意訊問你的需求。
+                  我目前可以接受新的項目與合作。不論是前端開發、後端開發或系統維運，我都樂意了解您的需求。
                 </p>
                 <div className="space-y-2 text-sm">
                   <p><strong>回覆時間：</strong> 24 小時內</p>
                   <p><strong>偏好項目：</strong> 前端開發、系統維運、全棧開發</p>
-                  <p><strong>合作風格：</strong> 敏捷、遠程協作</p>
+                  <p><strong>合作風格：</strong> 敏捷、遠端協作</p>
                 </div>
               </Card>
             </div>
@@ -77,7 +77,7 @@ const ContactSection = () => {
               
               {/* Contact Details */}
               <Card className="p-8 shadow-card">
-                <h3 className="text-2xl font-serif font-semibold mb-6">訊問我</h3>
+                <h3 className="text-2xl font-serif font-semibold mb-6">聯絡我</h3>
                 <div className="space-y-6">
                   {contactInfo.map((item, index) => {
                     return (
