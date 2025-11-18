@@ -19,7 +19,6 @@ jobs:
     env:
       ROLLUP_USE_NATIVE: "false"
       NPM_CONFIG_LEGACY_PEER_DEPS: "true"
-      NPM_CONFIG_OPTIONAL: "false"
     steps:
       - uses: actions/checkout@v4
 
@@ -29,14 +28,11 @@ jobs:
           node-version: 20
 
       - name: Install dependencies
-        run: npm install
-
-      - name: Ensure rollup native binary present
-        run: npm install @rollup/rollup-linux-x64-gnu --no-save --legacy-peer-deps
+        run: npm install --legacy-peer-deps
 
       - name: Build project
         run: |
-          ROLLUP_USE_NATIVE=false NPM_CONFIG_OPTIONAL=false NPM_CONFIG_LEGACY_PEER_DEPS=true npm run build
+          ROLLUP_USE_NATIVE=false NPM_CONFIG_LEGACY_PEER_DEPS=true npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
